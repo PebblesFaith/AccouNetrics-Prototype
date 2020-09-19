@@ -1,0 +1,134 @@
+body {
+    background-color: white;
+    height: auto;
+  }
+  
+  /* Add media screen color change, if the screen is reduce to 400px. */
+  @media screen and (min-width: 400px) {
+    body {
+      background-color: rgb(255, 255, 255);
+    }
+  }
+  
+  /* Main flex box container for storing individual buttons sub-containers. */
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;  
+    background-color: rgb(255, 255, 255); 
+    align-items: center;
+    justify-content: center; 
+   }
+  
+  /* Add push selector to div element to skip three (3) empty div element containers, so my remaining containers can be shown, as individual line button, if shrink. */
+  .push {
+    margin-left: auto;
+   }
+  
+  /* Setup sub-containers div elements for storing navigational buttons on top of homepage. */
+  
+  .flex-container > div {
+    background-color: rgb(255, 255, 255);
+    width: 165px;
+    margin: 10px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 16px;
+    margin-left: center;
+    border: none;  
+    font-family: 'Book Antiqua', Times, serif; 
+    font-style: italic; 
+  }
+  
+  /* Assign selector button to div element for linking button1 to the "What We Do" web page. */
+  .button1 {
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-family: 'Book Antiqua', Times, serif;
+    font-size: 16px;
+    cursor: 16px;
+    cursor: pointer;
+    display: inline-block; 
+    color: rgb(107, 107, 107);   
+  }
+  
+  .button1:hover {background: #eee;}
+  .WhatWeDo {color: rgb(107, 107, 107);}
+  
+  /* Assign selector button to div element for linking button2 to the "ABout" web page. */
+  .button2 {
+      border: none;
+      background-color: inherit;
+      padding: 14px 28px;
+      font-family: 'Book Antiqua', Times, serif;
+      font-size: 16px;
+      cursor: 16px;
+      cursor: pointer;
+      display: inline-block; 
+      color: rgb(107, 107, 107);  
+  }
+  
+  .button2:hover {background: #eee;}
+  .About {color: rgb(107, 107, 107);}
+  
+  /* Assign selector button to div element for linking button3 to the "Contact" web page. */
+  .button3 {
+      border: none;
+      background-color: inherit;
+      padding: 14px 28px;
+      font-family: 'Book Antiqua', Times, serif;
+      font-size: 16px;
+      cursor: 16px;
+      cursor: pointer;
+      display: inline-block; 
+      color: rgb(107, 107, 107);   
+  }
+  
+  .button3:hover {background: #eee;}
+  .contact {color: rgb(107, 107, 107);}
+  
+  /* Assign selector button to div element for linking button4 to the "Login" web page. */
+  .button4 {
+      border: none;
+      background-color: inherit;
+      padding: 14px 28px;
+      font-family: 'Book Antiqua', Times, serif;
+      font-size: 16px;
+      cursor: 16px;
+      cursor: pointer;
+      display: inline-block;   
+      color: rgb(107, 107, 107);
+  }
+  
+  .button4:hover {background: #eee;}
+  .login {color: rgb(107, 107, 107);}
+ 
+  
+ /* Main flex box container to store "AutonOfy Strip Double Line Under Header" picture into sub-containers. */
+#banner1 {
+  border: none;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#baseLine-01 {
+ 
+ 
+  width: 100%;
+  margin:auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  transform: rotate(0deg);
+  stroke: rgb(107, 107, 107);
+  stroke-width: 4px;
+ 
+ 
+
+}
+
+
+
+  
+
