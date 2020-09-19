@@ -55,42 +55,26 @@
   }
   
   .button1:hover {background: #eee;}
-  .WhatWeDo {color: rgb(107, 107, 107);}
-  
-  /* Assign selector button to div element for linking button2 to the "ABout" web page. */
+  .button1:hover {color: rgb(107, 107, 107);} 
+
+  /* Assign selector button to div element for linking button2 to the "English" web page. */
   .button2 {
-      border: none;
-      background-color: inherit;
-      padding: 14px 28px;
-      font-family: 'Book Antiqua', Times, serif;
-      font-size: 16px;
-      cursor: 16px;
-      cursor: pointer;
-      display: inline-block; 
-      color: rgb(107, 107, 107);  
-  }
+    border: none;
+    background-color: inherit;
+    padding: 14px 15px;
+    font-family: 'Book Antiqua', Times, serif;
+    font-size: 16px;
+    cursor: 16px;
+    cursor: pointer;
+    display: inline-block; 
+    color: rgb(107, 107, 107);   
+}
+
+.button2:hover {background: #eee;}
+.button2:hover {color: rgb(107, 107, 107);}
   
-  .button2:hover {background: #eee;}
-  .About {color: rgb(107, 107, 107);}
-  
-  /* Assign selector button to div element for linking button3 to the "Contact" web page. */
+  /* Assign selector button to div element for linking button3 to the "Login" web page. */
   .button3 {
-      border: none;
-      background-color: inherit;
-      padding: 14px 28px;
-      font-family: 'Book Antiqua', Times, serif;
-      font-size: 16px;
-      cursor: 16px;
-      cursor: pointer;
-      display: inline-block; 
-      color: rgb(107, 107, 107);   
-  }
-  
-  .button3:hover {background: #eee;}
-  .contact {color: rgb(107, 107, 107);}
-  
-  /* Assign selector button to div element for linking button4 to the "Login" web page. */
-  .button4 {
       border: none;
       background-color: inherit;
       padding: 14px 28px;
@@ -102,11 +86,11 @@
       color: rgb(107, 107, 107);
   }
   
-  .button4:hover {background: #eee;}
-  .login {color: rgb(107, 107, 107);}
+  .button3:hover {background: #eee;}
+  .button3:hover {color: rgb(107, 107, 107);}
 
-  /* Assign selector button to div element for linking button5 to the "Company SignUp" web page. */
-.button5 {
+  /* Assign selector button to div element for linking button4 to the "Company SignUp" web page. */
+.button4 {
   border: none;
   background-color: inherit;
   padding: 14px 28px;
@@ -118,8 +102,8 @@
   color: rgb(107, 107, 107);
 }
 
-.button5:hover {background: #eee;}
-.companysignup {color: rgb(107, 107, 107);} 
+.button4:hover {background: #eee;}
+.button4:hover {color: rgb(107, 107, 107);} 
   
  /* Main flex box container to store "AutonOfy Strip Double Line Under Header" picture into sub-containers. */
 #banner1 {
@@ -161,9 +145,444 @@
   border: none;  
 }
 
+.row1 {
+  margin-top: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;    
+  align-items: flex-start;
+  justify-content: space-between;     
+  background-color:rgb(180, 137, 0);
+}
+
+.column1 {                                       
+  flex: 14.2%;
+  max-width: 14.2%;
+  padding: 0 4px;
+  text-align: center;
+  font-size: 20px; 
+  font-family: 'Book Antiqua', Times, serif; 
+  font-style: italic; 
+  background-color: rgb(180, 137, 0);
+  color: white;
+}
+
+#alignment1 {
+margin-top: 60px;
+margin-left: 0px;
+}
+
+.columnHeader01 {
+  margin-top: 10px;
+  text-align: center;
+  padding: 5px 15px;
+  font-family: 'Book Antiqua', Times, serif;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+} 
+
+/* Main flex box container to store "Tier 3 Links" into sub-containers. */
+.flex-container3 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;  
+  background-color:  rgb(180, 137, 0); 
+  align-items: center;
+  justify-content: center; 
+  }
+  
+ /* Assign Selector to Sub-container element to store "Tier 3 Links" into sub-containers */  
+  .flex-container3 > div {
+  background-color: rgb(180, 137, 0);
+  width: 180px;
+  margin: 10px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 18px;
+  margin-left: center;
+  border: none;  
+  font-family: 'Book Antiqua', Times, serif; 
+  font-style: italic; 
+  color: rgb(255, 255, 255);
+  }
 
 
 
 
+/* */
+.accouNetrics-FooterBanner01 {
+  width: 200px; 
+  height: 75px;
+}
 
+/* Assign selector button to div element for linking button5 to the "About" web page. */
+.button5 {
+  border: none;
+  background-color: inherit;
+  padding: 12px 24px;
+  font-family: 'Book Antiqua', Times, serif;
+  font-size: 12px;
+  cursor: 16px;
+  cursor: pointer;
+  display: inline-block; 
+  color: rgb(255, 255, 255);  
+}
 
+.button5:hover {background: rgb(179, 179, 179);}
+.button5:hover {color: rgb(107, 107, 107);}
+
+/* Assign selector button to div element for linking button6 to the "Contact Us" web page. */
+.button6 {
+  border: none;
+  background-color: inherit;
+  padding: 12px 24px;
+  font-family: 'Book Antiqua', Times, serif;
+  font-size: 12px;
+  cursor: 16px;
+  cursor: pointer;
+  display: inline-block; 
+  color: rgb(255, 255, 255);   
+}
+
+.button6:hover {background: rgb(179, 179, 179);}
+.button6:hover {color: rgb(107, 107, 107);}
+
+/* Assign selector button to div element for linking button7 to the "Employment Opportunties" web page. */
+.button7 {
+  border: none;
+  background-color: inherit;
+  padding: 12px 24px;
+  font-family: 'Book Antiqua', Times, serif;
+  font-size: 12px;
+  cursor: 16px;
+  cursor: pointer;
+  display: inline-block; 
+  color: rgb(255, 255, 255);   
+}
+
+.button7:hover {background: rgb(179, 179, 179);}
+.button7:hover {color: rgb(107, 107, 107);}
+
+/* Assign selector button to div element for linking button8 to the "Jobs" web page. */
+.button8 {
+  border: none;
+  background-color: inherit;
+  padding: 12px 24px;
+  font-family: 'Book Antiqua', Times, serif;
+  font-size: 12px;
+  cursor: 16px;
+  cursor: pointer;
+  display: inline-block; 
+  color: rgb(255, 255, 255);   
+}
+
+.button8:hover {background: rgb(179, 179, 179);}
+.button8:hover {color: rgb(107, 107, 107);}
+
+/* Assign selector button to div element for linking button9 to the "Academic Solution Products" web page. */
+.button9 {
+  border: none;
+  background-color: inherit;
+  padding: 12px 24px;
+  font-family: 'Book Antiqua', Times, serif;
+  font-size: 12px;
+  cursor: 16px;
+  cursor: pointer;
+  display: inline-block; 
+  color: rgb(255, 255, 255);   
+}
+
+.button9:hover {background: rgb(179, 179, 179);}
+.button9:hover {color: rgb(107, 107, 107);}
+
+/* Assign selector button to div element for linking button10 to the "Universities" web page. */
+.button10 {
+  border: none;
+  background-color: inherit;
+  padding: 12px 24px;
+  font-family: 'Book Antiqua', Times, serif;
+  font-size: 12px;
+  cursor: 16px;
+  cursor: pointer;
+  display: inline-block; 
+  color: rgb(255, 255, 255);   
+}
+
+.button10:hover {background: rgb(179, 179, 179);}
+.button10:hover {color: rgb(107, 107, 107);}
+
+/* Assign selector button to div element for linking button11 to the "Members" web page. */
+.button11 {
+  border: none;
+  background-color: inherit;
+  padding: 12px 24px;
+  font-family: 'Book Antiqua', Times, serif;
+  font-size: 12px;
+  cursor: 16px;
+  cursor: pointer;
+  display: inline-block; 
+  color: rgb(255, 255, 255);   
+}
+
+.button11:hover {background: rgb(179, 179, 179);}
+.button11:hover {color: rgb(107, 107, 107);}
+
+/* Assign selector button to div element for linking button12 to the "Investors" web page. */
+.button12 {
+  border: none;
+  background-color: inherit;
+  padding: 12px 24px;
+  font-family: 'Book Antiqua', Times, serif;
+  font-size: 12px;
+  cursor: 16px;
+  cursor: pointer;
+  display: inline-block; 
+  color: rgb(255, 255, 255);   
+}
+
+.button12:hover {background: rgb(179, 179, 179);}
+.button12:hover {color: rgb(107, 107, 107);}
+
+/* Assign selector button to div element for linking button13 to the "Developers" web page. */
+.button13 {
+  border: none;
+  background-color: inherit;
+  padding: 12px 24px;
+  font-family: 'Book Antiqua', Times, serif;
+  font-size: 12px;
+  cursor: 16px;
+  cursor: pointer;
+  display: inline-block; 
+  color: rgb(255, 255, 255);   
+}
+
+.button13:hover {background: rgb(179, 179, 179);}
+.button13:hover {color: rgb(107, 107, 107);}
+
+/* Assign selector button to div element for linking button14 to the "Terms of Use" web page. */
+.button14 {
+  border: none;
+  background-color: inherit;
+  padding: 12px 24px;
+  font-family: 'Book Antiqua', Times, serif;
+  font-size: 12px;
+  cursor: 16px;
+  cursor: pointer;
+  display: inline-block; 
+  color: rgb(255, 255, 255);   
+}
+
+.button14:hover {background: rgb(179, 179, 179);}
+.button14:hover {color: rgb(107, 107, 107);}
+
+/* Assign selector button to div element for linking button15 to the "Privacy Policy" web page. */
+.button15 {
+  border: none;
+  background-color: inherit;
+  padding: 12px 24px;
+  font-family: 'Book Antiqua', Times, serif;
+  font-size: 12px;
+  cursor: 16px;
+  cursor: pointer;
+  display: inline-block; 
+  color: rgb(255, 255, 255);   
+}
+
+.button15:hover {background: rgb(179, 179, 179);}
+.button15:hover {color: rgb(107, 107, 107);}
+
+/* Assign selector button to div element for linking button16 to the "Federal Academic Reporting Act (FARA)" web page. */
+.button16 {
+  border: none;
+  background-color: inherit;
+  padding: 12px 24px;
+  font-family: 'Book Antiqua', Times, serif;
+  font-size: 12px;
+  cursor: 16px;
+  cursor: pointer;
+  display: inline-block; 
+  color: rgb(255, 255, 255);   
+}
+
+.button16:hover {background: rgb(179, 179, 179);}
+.button16:hover {color: rgb(107, 107, 107);}
+
+/* Assign selector button to div element for linking button17 to the "Family Education Rights and Privacy Act (FERPA)" web page. */
+.button17 {
+  border: none;
+  background-color: inherit;
+  padding: 12px 24px;
+  font-family: 'Book Antiqua', Times, serif;
+  font-size: 12px;
+  cursor: 16px;
+  cursor: pointer;
+  display: inline-block; 
+  color: rgb(255, 255, 255);   
+}
+
+.button17:hover {background: rgb(179, 179, 179);}
+.button17:hover {color: rgb(107, 107, 107);}
+
+/* Assign selector button to div element for linking button18 to the "Local Education Agency (LEA)" web page. */
+.button18 {
+  border: none;
+  background-color: inherit;
+  padding: 12px 24px;
+  font-family: 'Book Antiqua', Times, serif;
+  font-size: 12px;
+  cursor: 16px;
+  cursor: pointer;
+  display: inline-block; 
+  color: rgb(255, 255, 255);   
+}
+
+.button18:hover {background: rgb(179, 179, 179);}
+.button18:hover {color: rgb(107, 107, 107);}
+
+/* Assign selector button to div element for linking button19 to the "Protection of Pupil Rights Act (PPRA)" web page. */
+.button19 {
+  border: none;
+  background-color: inherit;
+  padding: 12px 24px;
+  font-family: 'Book Antiqua', Times, serif;
+  font-size: 12px;
+  cursor: 16px;
+  cursor: pointer;
+  display: inline-block; 
+  color: rgb(255, 255, 255);   
+}
+
+.button19:hover {background: rgb(179, 179, 179);}
+.button19:hover {color: rgb(107, 107, 107);}
+
+/* Assign selector button to div element for linking button20 to the "Student Privacy Policy Office (SPPO)" web page. */
+.button20 {
+  border: none;
+  background-color: inherit;
+  padding: 12px 24px;
+  font-family: 'Book Antiqua', Times, serif;
+  font-size: 12px;
+  cursor: 16px;
+  cursor: pointer;
+  display: inline-block; 
+  color: rgb(255, 255, 255);   
+}
+
+.button20:hover {background: rgb(179, 179, 179);}
+.button20:hover {color: rgb(107, 107, 107);}
+
+/* Assign selector button to div element for linking button21 to the "Sign In" web page. */
+.button21 {
+  border: none;
+  background-color: inherit;
+  padding: 12px 24px;
+  font-family: 'Book Antiqua', Times, serif;
+  font-size: 12px;
+  cursor: 16px;
+  cursor: pointer;
+  display: inline-block; 
+  color: rgb(255, 255, 255);   
+}
+
+.button21:hover {background: rgb(179, 179, 179);}
+.button21:hover {color: rgb(107, 107, 107);}
+
+/* Assign selector button to div element for linking button22 to the "Help Center" web page. */
+.button22 {
+  border: none;
+  background-color: inherit;
+  padding: 12px 24px;
+  font-family: 'Book Antiqua', Times, serif;
+  font-size: 12px;
+  cursor: 16px;
+  cursor: pointer;
+  display: inline-block; 
+  color: rgb(255, 255, 255);   
+}
+
+.button22:hover {background: rgb(179, 179, 179);}
+.button22:hover {color: rgb(107, 107, 107);}
+
+/* Assign selector button to div element for linking button23 to the "Guidelines" web page. */
+.button23 {
+  border: none;
+  background-color: inherit;
+  padding: 12px 24px;
+  font-family: 'Book Antiqua', Times, serif;
+  font-size: 12px;
+  cursor: 16px;
+  cursor: pointer;
+  display: inline-block; 
+  color: rgb(255, 255, 255);   
+}
+
+.button23:hover {background: rgb(179, 179, 179);}
+.button23:hover {color: rgb(107, 107, 107);}
+
+/* Assign selector button to div element for linking button24 to the "Report a It Non-Compliance" web page. */
+.button24 {
+  border: none;
+  background-color: inherit;
+  padding: 12px 24px;
+  font-family: 'Book Antiqua', Times, serif;
+  font-size: 12px;
+  cursor: 16px;
+  cursor: pointer;
+  display: inline-block; 
+  color: rgb(255, 255, 255);   
+}
+
+.button24:hover {background: rgb(179, 179, 179);}
+.button24:hover {color: rgb(107, 107, 107);}
+
+/* Assign selector button to div element for linking button25 to the "Accessibility" web page. */
+.button25 {
+  border: none;
+  background-color: inherit;
+  padding: 12px 24px;
+  font-family: 'Book Antiqua', Times, serif;
+  font-size: 12px;
+  cursor: 16px;
+  cursor: pointer;
+  display: inline-block; 
+  color: rgb(255, 255, 255);   
+}
+
+.button25:hover {background: rgb(179, 179, 179);}
+.button25:hover {color: rgb(107, 107, 107);}
+
+#baseLine-02 {
+  background-color: rgb(180, 137, 0);
+  width: 100%;
+  margin:auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  transform: rotate(0deg);
+  stroke: rgb(107, 107, 107);
+  stroke-width: 4px;
+}
+
+   /* Responsive layout - makes a two (2) column-layout instead of one (1) column in third (3rd) icons row. */
+   @media (max-width: 1000px) {
+    .column1 {
+      flex: 50%;
+      max-width: 50%;
+    }
+    }
+    
+    /* Responsive layout - makes the three (3) columns stack on top of each other instead of next to each other in third (3rd) icons row.*/
+    @media (max-width: 800px) {
+    .column1 {
+      flex: 75%;
+      max-width: 75%;
+    }
+    }
+    
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other in third (3rd) icons row.*/
+    @media (max-width: 600px) {
+    .column1 {
+      flex: 100%;
+      max-width: 100%;
+    }
+    }
+    
