@@ -114,8 +114,6 @@ body {
 }
 
 #baseLine-01 {
- 
- 
   width: 100%;
   margin:auto;
   margin-top: auto;
@@ -123,7 +121,6 @@ body {
   transform: rotate(0deg);
   stroke: rgb(107, 107, 107);
   stroke-width: 4px;
- 
  
 
 }
