@@ -1,6 +1,7 @@
-body {
+.body-alignment {
     background-color: white;
     height: auto;
+   
   }
   
   /* Add media screen color change, if the screen is reduce to 400px. */
@@ -103,7 +104,22 @@ body {
   
   .button4:hover {background: #eee;}
   .login {color: rgb(107, 107, 107);}
- 
+
+  /* Assign selector button to div element for linking button5 to the "Company SignUp" web page. */
+.button5 {
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-family: Book Antiqua;
+  font-size: 16px;
+  cursor: 16px;
+  cursor: pointer;
+  display: inline-block;   
+  color: rgb(107, 107, 107);
+}
+
+.button5:hover {background: #eee;}
+.companysignup {color: rgb(107, 107, 107);} 
   
  /* Main flex box container to store "AutonOfy Strip Double Line Under Header" picture into sub-containers. */
 #banner1 {
@@ -121,11 +137,33 @@ body {
   transform: rotate(0deg);
   stroke: rgb(107, 107, 107);
   stroke-width: 4px;
- 
+}
 
+/* Main flex box container to store "Tier 2 Links" into sub-containers. */
+#flex-container2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;  
+  background-color: rgb(180, 137, 0); 
+  align-items: center;
+  justify-content: center;
+}
+
+/* Assign Selector to Sub-container element to store "Tier 2 Links" into sub-containers */
+#flex-container2 > div {
+  background-color: rgb(180, 137, 0);
+  width: 1440px;
+  height: 30px;
+  margin: 10px;
+  text-align: center;
+  line-height: 20px; 
+  margin-left: center;
+  border: none;  
 }
 
 
 
-  
+
+
+
 
