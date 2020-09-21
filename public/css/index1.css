@@ -55,7 +55,7 @@
   }
   
   .button1:hover {background: #eee;}
-  .button1:hover {color: rgb(107, 107, 107);} 
+  .button1:hover {color: rgb(107, 107, 107);}   
 
   /* Assign selector button to div element for linking button2 to the "English" web page. */
   .button2 {
@@ -114,13 +114,10 @@
 }
 
 #baseLine-01 {
-  width: 100%;
-  margin:auto;
-  margin-top: auto;
-  margin-bottom: auto;
-  transform: rotate(0deg);
-  stroke: rgb(107, 107, 107);
-  stroke-width: 4px;
+  height: 1px;
+  border: none;
+  color: rgb(107, 107, 107);
+  background-color: rgb(179, 179, 179);  
 }
 
 /* Main flex box container to store "Tier 2 Links" into sub-containers. */
@@ -205,9 +202,6 @@ margin-left: 0px;
   font-style: italic; 
   color: rgb(255, 255, 255);
   }
-
-
-
 
 /* */
 .accouNetrics-FooterBanner01 {
@@ -551,16 +545,63 @@ margin-left: 0px;
 .button25:hover {background: rgb(179, 179, 179);}
 .button25:hover {color: rgb(107, 107, 107);}
 
-#baseLine-02 {
-  background-color: rgb(180, 137, 0);
-  width: 100%;
-  margin:auto;
-  margin-top: auto;
-  margin-bottom: auto;
-  transform: rotate(0deg);
-  stroke: rgb(107, 107, 107);
-  stroke-width: 4px;
-}
+#alignment2 {
+  margin-top: 25px;
+  margin-right: 0px;
+  margin-bottom: 25px;
+  }
+  
+  /* Setup row container to house one straight line row */ 
+  .row2 {
+  margin-top: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;    
+  align-items: center;
+  justify-content: center;     
+  background-color:rgb(179, 179, 179);
+  }
+  
+  /* First (1st) row icons are position with top margin pixels selected to provide space between icons rows*/
+  #alignment3 {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* Setup row container to house one straight line row */ 
+  .row3 {
+    margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;    
+    align-items: center;
+    justify-content: center;     
+    background-color:rgb(180, 137, 0);
+  }
+
+   /* First (1st) row icons are position with top margin pixels selected to provide space between icons rows*/
+   #alignment4 {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);  
+  }
+      
+    
+
+
+
+
+
+
+
+
+
+
+
 
    /* Responsive layout - makes a two (2) column-layout instead of one (1) column in third (3rd) icons row. */
    @media (max-width: 1000px) {
