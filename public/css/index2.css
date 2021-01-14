@@ -54,7 +54,10 @@
   /* Style Contact Us left-side colunn for AccouNetrics commpany address and contact information.*/
   .left-Column {
     background-color: rgb(180, 137, 0); 
-    height: 600px;    
+    height: 550px;
+    display: flex;
+    flex-direction: column;   
+
   }
 
  /* Style Contact Us left-side custom AccouNetrics banner.*/ 
@@ -72,13 +75,7 @@
     color: rgb(107, 107, 107);
     background-color: rgb(179, 179, 179);  
   }
-
-  form {
-    width: 90%;
-    margin: auto;
-   
-  }
-
+  
   .right-Column {
     display: flex; 
     align-items: center; 
@@ -95,43 +92,109 @@
   }
 
    .right-Column input {-webkit-animation-name: none;
-    padding: 10px;
-    margin: 10px 30px;
+    padding: 2px;
+    margin: 5px 28px;
     width: 85%;
     background-color: rgb(179, 179, 179, 0.5);
     color: rgb(180, 137, 0);
-    font-family: 'Book Antiqua', Times, serif;
-    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;   
     border: none;
     outline: none;    
     font-size: 14px;    
   }
 
-  input::placeholder {
-    color: rgb(180, 137, 0);
-    font-family: 'Book Antiqua', Times, serif;
-    font-size: 14px;
+  .contactUsForm {
+    width: 90%;
+    margin: auto;   
   }
 
-  textarea {
-    resize: vertical;
+  .userDataField {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 4%;
+    width: 100%;
+  }
+
+  .userDataField .input {   
+    margin: 10px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid rgb(180, 137, 0);
     padding: 10px;
-    margin: 10px 30px;
-    width: 85%;
-    background-color: rgb(179, 179, 179, 0.5);
+    color:  rgb(180, 137, 0);
+    width: 100%;
+  }
+
+  #firstName, #middleName, #lastName, #userMembership {
+    margin: 5 px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid  #b48900;
+    padding: 3px;
     color: rgb(180, 137, 0);
-    font-family: 'Book Antiqua', Times, serif;
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    text-transform: capitalize;   
+  }
+
+  #email, #confirmEmail {
+    margin: 5 px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid  #b48900;
+    padding: 3px;
+    color: rgb(180, 137, 0);
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    text-transform: lowercase;   
+  }
+
+
+  /* Style text-transform input elements from users' values'. */
+
+  ::-webkit-input-placeholder { 
+      text-transform: none;
+  }
+  :-moz-placeholder { 
+      text-transform: none;
+  }
+  ::-moz-placeholder { 
+      text-transform: none;
+  }
+  :-ms-input-placeholder { 
+      text-transform: none;
+  }
+
+  input::placeholder {
+    color: rgb(180, 137, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;   
+  }  
+
+  #message {
+    resize: vertical;
+    padding: 2px;
+    margin: 5px 30px;
+    width: 100%;
+    background-color: transparent;
+    color: rgb(180, 137, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
     border: none;
     outline: none;    
     font-size: 14px; 
   }
 
-  textarea::placeholder{
+  #message::placeholder{
     color: rgb(180, 137, 0);
-    font-family: 'Book Antiqua', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 14px;
   }
-
+  #message:hover {background: rgb(253, 253, 253);}
+  #message:hover {color: rgb(180, 137, 0);}
   
 
   .employeeName01 {
@@ -151,29 +214,10 @@ a:hover {
   color: rgb(107, 107, 107);
 }
 
-
-
-.form-Index2{
+#form-Index2{
   display:grid;
   grid-template-columns: auto auto;
-  
-
- 
 }
-
-#memberships {
-  padding: 10px;
-    margin: 10px 30px;
-    width: 88%;
-    background-color: rgb(179, 179, 179, 0.5);
-    color: rgb(180, 137, 0);
-    border: none;
-    outline: none;    
-    font-size: 14px; 
-    font-family: 'Book Antiqua', Times, serif;
-    font-size: 14px;  
-}
-
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other in third (3rd) icons row.*/
 @media (max-width: 600px) {
@@ -186,18 +230,120 @@ a:hover {
   }
   
 /* Assign selector button to div element for linking submitButton01 to the "Semd Message" web page. */
-.submitButton01 {
+#submitContactUs {
   border: none;
-  background-color: inherit;
+  background-color: rgb(179, 179, 179);
   padding: 12px 24px;
   font-family: 'Book Antiqua', Times, serif;
-  font-size: 12px;
+  font-size: 16px;
   text-align: center;  
-  cursor: 16px;
+  width: 100%;
   cursor: pointer;
   display: inline-block; 
-  color: rgb(255, 255, 255);   
+  color: rgb(255, 255, 255);
+     
 }
 
-.submitButton01:hover {background: rgb(179, 179, 179);}
-.submitButton01:hover {color: rgb(107, 107, 107);}
+#submitContactUs:hover {background: rgb(255, 255, 255);}
+#submitContactUs:hover {color: rgb(180, 137, 0);}
+
+#form-errorAlert {
+  color: red; 
+}
+
+#form-success {
+  color: green;
+}
+
+.input-error {
+  box-shadow: 0 0 5px red;
+}
+
+#userFirstNameErrorMessage, #outputFirstNameAnalysis, #userMiddleNameErrorMessage, #outputMiddleNameAnalysis,
+#userLastNameErrorMessage, #outputLastNameAnalysis, #userMembershipErrorMessage, #outputUserMembershipAnalysis,
+#userEmailErrorMessage, #outputEmailAnalysis, #userConfirmEmailErrorMessage, #outputConfirmEmailAnalysis,
+#outputMessageAnalysis, #countMessage, #remainingCount
+{
+  background: rgb(255, 255, 255);
+  color: rgb(209, 196, 138);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 10px;    
+}
+
+#userErrorMessage {
+  background: rgb(243, 243, 243);
+  color: rgb(209, 196, 138);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 12px;    
+}
+
+#countMessage {
+  background: rgb(243, 243, 243);
+  color: rgb(209, 196, 138);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 10px;  
+}
+
+#remainingCount {
+  background: rgb(243, 243, 243);
+  color: rgb(209, 196, 138);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 10px;  
+}
+
+#footerRow {
+  margin-top: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 4px;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+}
+
+#footerColumn > a {
+  flex: 10.2%;
+  max-width: 10.2%;
+  border: none;
+  padding: 0 4px;
+  text-align: center;
+  font-size: 11px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background: rgb(255, 255, 255);
+  color: rgb(179, 179, 179);
+}
+
+#footerColumn > a:link {
+  color:rgb(179, 179, 179);
+}
+
+#footerColumn > a:visited {
+  color:rgb(179, 179, 179);
+}
+
+#footerColumn >a:hover {
+  color:rgb(209, 196, 138);
+}
+  
+#footerColumn >a:active {
+  color:rgb(85, 73, 20);
+}
+
+  
+/* First (1st) row icons are position with top margin pixels selected to provide space between icons rows*/
+#alignment4 {
+  text-align: center;
+  margin-top: 2px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+  color: rgb(180, 137, 0);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 11px;
+ 
+}
+      
+
+
+
+
