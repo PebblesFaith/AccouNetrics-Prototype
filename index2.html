@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AccouNetrics</title>
     <link rel="icon" type="image/jpg" href="./public/AccouNetrics-Favicon.jpg" />
-    <link href="./public/css/index2.css" rel="stylesheet" />
-    
-
-    <body>
-
+    <link href="./public/css/index2.css" rel="stylesheet" />  
+   
+    <script defer type="text/javascript" src="index2.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+   
+</head>  
+    <body>   
         <div class="float-Container01">
             <div class='rowIndex2'>
               <div class='columnIndex2'>                  
@@ -30,69 +32,132 @@
                       <br>
                       Telephone Number: xxx.xxx.xxxx
                       <br>
-                      <a href="mailto:ajai.sarai.h@outlook.com">Email: ajai.sarai.h@outlook.com</a>
+                      <a href="mailto:sarai.h.ajai@accounetrics.com">Email: sarai.h.ajai@accouNetrics.com</a>
                     </h5>
                  </div>
-               </div>
-              </div>  
-              
+                </div>
+              </div> 
             
                 <div class='columnIndex2'>                
                   <div class='right-Column'>
                    
                     <div class="containerIndex2">
                       <div id="pH2-01">Get In Touch
-                      <br>
-                      <br>
+                      <br>                     
                     </div>
                     <div id="pH2-02">
-                      Let Us Support Your Personal or Educational Institution Student[s] Profile Needs
-                      <br>
-                      <br>
-                      </div>
+                      Let Us Support Your Personal or student[s] Educational Institution Profile Needs
+                      <br>                     
+                      </div>             
                   
-                      <form action="" method="">
-                        <div class="form-Index2">                          
-                          <input type="text" id="firstName" name="firstName" placeholder="First Name" required ><br>
-                          <input type="text" id="middleName" name="middleName" placeholder="Middle Name (optional)" ><br>
-                          <input type="text" id="lastName" name="lastName" placeholder="Last Name" required ><br>
-                       
-                                               
-                        
-                          <select id="memberships" name="myMembership" required >
-                            <option value=""disable selected hidden>Choose Your Membership</option>
-                              <option value=”Customer”>Customer</option>
-                              <option value=”K-12-School”>K-12 School</option>
-                              <option value=”College”>College</option>
-                              <option value=”University”>University</option>
-                              <option value=”Military-Cadets-Institution”>Military Cadets Institution</option>
-                              <option value=”Question”>I Am Not A Member</option></label>                              
-                          </select>
-                          <br>
+                      <div class = "contactUsForm">
+                        <div class = "userDataField">
+                          <input type = "text" id = "firstName" onfocusout = "userMiddleName()" maxlength = "75"  placeholder = "First Name">
+                          <p id = "userFirstNameErrorMessage"></p>
+                        </div>                      
 
-                          <input type="text" id="email" name="email" placeholder="Email" required><br>                        
-                          <textarea name="message" id="message" cols="75" placeholder="Write Your Message Here" required></textarea><br>
-                          
-                          <input class="submitButton01" type="submitButton01" value="Send Message" 
-                          onclick="window.location.href='/index1.html'" />
-                        
-                             
+                        <div class = "userDataField">
+                          <input type = "text" id = "middleName" maxlength = "75" placeholder = "Middle Name (Optional)">
+                          <p id = "userMiddleNameErrorMessage"></p>
                         </div>
 
+                        <div class = "userDataField">
+                          <input type = "text" id = "lastName"maxlength = "75" placeholder = "Last Name">
+                          <p id = "userLastNameErrorMessage"></p>
+                        </div>
 
-                      </form>
-              
+                        <span>
+                          <div class = "userDataField">
+                            <select id = "userMembership" name = "selectUserMembership" >
+                              <option value=""disable selected hidden>Choose Your Membership</option>
+                                <option value = Customer>Customer</option>
+                                <option value = K-12-School>K-12 School</option>
+                                <option value = College>College</option>
+                                <option value = University>University</option>
+                                <option value = Military-Cadets-Institution>Military Cadets Institution</option>
+                                <option value = Massive_Open_Online_Institution>Massive Open Online Institution</option>
+                                <option value = Question>I Am Not A Member</option>                           
+                            </select>
+                            <p id = "userMembershipErrorMessage"></p>
+                          </div> 
+                          
+                        </span>
 
+                                            
+
+                        <div class = "userDataField">
+                          <input type = "email" id = "email" name = "email" maxlength = "100" placeholder = "Email">
+                          <p id = "userEmailErrorMessage"></p>
+                        </div>
+
+                        <div class = "userDataField">
+                          <input type = "confirmEmail" id = "confirmEmail" name = "confirmEmail" maxlength = "100"  placeholder = "Confirm Email">
+                          <p id = "userConfirmEmailErrorMessage"></p>
+                        </div>
+
+                        <div class = "userDataField">                          
+                          <textarea id="message" wrap="hard" rows = "3" cols = "56" spellcheck= "true" maxlength = "400" placeholder = "Enter Your Message Here" ></textarea>
+                          <p id = "userErrorMessage"></p>
+                          <p id = "remainingCount">Remaining Count <span id="countMessage"></span> out of 400 Characters</p>                                                                 
+                        </div>    
+
+                        <div class = "userDataField">
+                          <button id = "submitContactUs" onclick="submitContactUs()" >Send Message</button>
+                        </div>
+
+                      </div> 
+                    </div>
                   </div>
-
-                  
-                
-                </div>
-              </div>
-            </div>
+                </div>                     
+              </div>                    
+            </div>                
           </div>
+        </div>
 
+        <hr id="baseLine-01">
+        <hr id="baseLine-01">   
+        
+        <div id = "footerRow">
+          <div id = "footerColumn">
+            <a href = './index1.html'>About Us</a>
+          </div>  
+          <div id = "footerColumn">
+            <a href = './index1.html'>Help Center</a>
+          </div>            
+          <div id = "footerColumn">
+            <a href = './index1.html'>Blog</a>
+          </div>
+          <div id = "footerColumn">
+            <a href = './index1.html'>Sign In</a>
+          </div>
+          <div id = "footerColumn">
+            <a href = './index1.html'>Term of Use</a>
+          </div>
+          <div id = "footerColumn">
+            <a href = './index1.html'>Privacy Policy</a>          
+          </div>
+          <div id = "footerColumn">
+            <a href = './index1.html'>Cookie Policy</a>
+          </div>
+          <div id = "footerColumn">
+            <a href = './index1.html'>Develops</a>
+          </div>
+          <div id = "footerColumn">
+            <a href = './index1.html'>Careers</a>
+          </div>
+        </div>        
 
-    
-</body>
+        <hr id="baseLine-01">   
+        <hr id="baseLine-01"> 
+        
+        <div id="alignment4">
+          <div>
+              <img src="./public/AccouNetrics Copyright2 Images Crop.png" />
+              AccouNetrics 2021 
+          </div>
+        </div> 
+
+      </div>
+    </div>
+  </body>
 </html>
