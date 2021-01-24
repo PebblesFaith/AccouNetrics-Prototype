@@ -1,0 +1,241 @@
+/* Sarai Hannah Ajai have created a CSS function clamp(minimum, perferred, maximum)
+   into the index4.css div tag body scope for which, the value clamp function returns
+   will be the perferred value, until that perferred value is lower than the 
+   mininum value or higher than the maximum value. */
+div {
+  font-size: clamp(20px, 3vw, 150px);
+}
+
+/* Sarai Hannah Aja have created a flex header div element in order to used the format
+  flex wrap into input 'titleHeader01' value and button type.  */
+#flex-Header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;  
+  background-color: rgb(255, 255, 255); 
+  align-items: center;
+  justify-content: center;
+}
+
+/* Sarai Hannah Ajai have set CSS formats to the input element that have an id attribute
+   value that matches 'titleHeader01' seletor. */
+#titleHeader01 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;    
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  margin: 25px; 
+  font-size: clamp(20px, 7vw, 300px);                               
+  font-family: 'Book Antiqua', Times, serif; 
+  color:  rgb(180, 137, 0);
+  border: none;
+  text-decoration: none;
+}
+
+/* Sarai Hannah Ajai have created a row container flexbox in order to store two (2) individual
+   columns.*/
+#row01 {  
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0 4px;    
+    align-items: center;
+    justify-content: center;     
+    background-color:rgb(255, 255, 255);
+}
+
+/* Sarai Hannah Ajai have created two (2) column containers inside the row container in order
+   to places input element associated with button types attributes inside each column container. */
+#column01 {
+    flex: 33.33%;
+    max-width: 33.33%;
+    padding: 0 4px;
+    text-align: center;
+    align-items: center;
+    justify-content: center; 
+    font-size: 15px;                    
+    font-family: 'Book Antiqua', Times, serif; 
+    font-style: italic;   
+    background-color: rgb(236, 236, 236, .30);
+    color: rgb(107, 107, 107);
+    border: 2px;
+    margin: 15px;   
+}
+
+/* Sarai Hannah Ajai have set CSS formats to these input elements which have an id
+   attributes values that matches the 'citizenButton' and 'businessButton' selectors
+   that are associated with button types attributes. */
+#citizenButton, #businessButton {
+    border: none;
+    background-color: rgb(180, 137, 0, .50);
+    padding: 12px 24px;
+    font-size: clamp(15px, 1vw, 35px);
+    font-family: 'Book Antiqua', Times, serif;       
+    text-align: center;
+    min-width: 80px;  
+    width: 50%;
+    cursor: pointer;
+    display: inline-block; 
+    color: rgb(255, 255, 255);
+    margin: 5px, 25px;
+} 
+
+/* Sarai Hannah Ajai have set customized CSS formats for mouseover events when a user
+   hover over the 'citizenButton' and 'businessButton' selectors within these input elements ids
+   attributes. */
+#citizenButton:hover {background: rgb(238, 238, 238);}
+#citizenButton:hover {color: rgb(107, 107, 107);}   
+
+#businessButton:hover {background: rgb(238, 238, 238);}
+#businessButton:hover {color: rgb(107, 107, 107);}  
+
+/* Sarai Hannah Ajai have created two (2) columns customized CSS formats in order to store
+   AccouNetrics' input elements that have an id attributes value that matches the 'left-Column'
+   and 'right-Column' selectors. */
+#left-Column > div, #right-Column > div {  
+    width: 375px;
+    margin: 10px, 25px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 18px;    
+    border: none;  
+    font-family: 'Book Antiqua', Times, serif; 
+    font-style: italic; 
+    color: rgb(107, 107, 107);
+}  
+
+/* Sarai Hannah Ajai have set CSS formats to the input element that have an id attribute
+   value that matches 'titleHeader02' seletor. */ 
+#titleHeader02 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;    
+  align-items: center;
+  justify-content: center;  
+  text-align: center;
+  margin: 25px; 
+  font-size: clamp(15px, 1vw, 35px);                               
+  font-family: 'Book Antiqua', Times, serif; 
+  color:  rgb(180, 137, 0);
+}
+
+/* Sarai Hannah Ajai have set CSS customized line format to the hr element that have an id attribute
+   value that matches 'baseline-01' seletor. */ 
+#baseLine-01 {
+  height: 1px;
+  border: none;
+  color: rgb(107, 107, 107);
+  background-color: rgb(179, 179, 179);
+  margin-bottom: 0px;   
+}
+
+/* Sarai Hannah Ajai have created a row container flexbox in order to store individual columns. */
+#footerRow {
+  margin-top: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 4px;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Sarai Hannah Ajai have created customized CSS column containers inside the row container in order
+   to places div elements that have an id attributes values which matches inside each column container
+   the 'footerColumn' selectors. */
+#footerColumn > a {
+  flex: 10.2%;
+  max-width: 10.2%;
+  border: none;
+  padding: 0 4px;
+  text-align: center;
+  font-size: 11px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background: rgb(255, 255, 255);
+  color: rgb(179, 179, 179);
+  text-decoration: none;
+  margin: 0px;
+  
+}
+
+/* Sarai Hannah Ajai have created a CSS customized links in four (4) different states.
+   So, when the end-user interact with those links states, the element that have an id
+   attribute values will targeted different styles states depending on what state the
+   end-user is in. */
+#footerColumn > a:link {
+  color:rgb(179, 179, 179);
+}
+
+#footerColumn > a:visited {
+  color:rgb(179, 179, 179);
+}
+
+#footerColumn >a:hover {
+  color:rgb(209, 196, 138);
+}
+  
+#footerColumn >a:active {
+  color:rgb(85, 73, 20);
+}
+  
+/* Sarai Hannah Ajai created a first (1st) row icons in order to position with top margin
+   pixels selected to provide space between icons rows. */
+#alignment4 {
+  text-align: center;
+  margin-top: 2px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+  color: rgb(180, 137, 0);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 11px; 
+}
+
+/* Sarai Hannah Ajai have set CSS formats to the paragraph element that have an id attribute
+   value that matches 'titleFooter01' seletor. */ 
+#titleFooter01 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;    
+  align-items: center;
+  justify-content: center;  
+  text-align: center;
+  margin: 25px; 
+  font-size: clamp(10px, 1vw, 35px);                               
+  font-family: 'Book Antiqua', Times, serif; 
+  color:  rgb(180, 137, 0);
+}
+
+  /* Responsive layout - makes a two (2) column-layout instead of one (1) column in three (3)
+     icons row. */
+  @media (max-width: 1000px) {
+    #column01 {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the three (3) columns stack on top of each other instead of
+     next to each other in three (3) icons row.*/
+  @media (max-width: 800px) {
+    #column01 {
+      flex: 75%;
+      max-width: 75%;
+    }
+  }
+  
+ /* Responsive layout - makes the three columns stack on top of each other instead of next 
+    to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+      
+
+
