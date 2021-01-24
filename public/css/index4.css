@@ -67,6 +67,21 @@ div {
     margin: 15px;   
 }
 
+/* Sarai Hannah Ajai have set CSS formats to the input element that have an id attribute
+   value that matches 'titleHeader03' seletor. */
+#titleHeader03 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;    
+  align-items: center;
+  justify-content: center;  
+  text-align: center;
+  margin: 25px; 
+  font-size: clamp(15px, 2vw, 35px);                               
+  font-family: 'Book Antiqua', Times, serif; 
+  color:  rgb(180, 137, 0);
+}
+
 /* Sarai Hannah Ajai have set CSS formats to these input elements which have an id
    attributes values that matches the 'citizenButton' and 'businessButton' selectors
    that are associated with button types attributes. */
